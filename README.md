@@ -21,9 +21,9 @@ Some of classes I created are:
 
 The Javascript function I created:
 
-document.addEventListener('click', function() {
+document.addEventListener('DOMContentLoaded', function() {
   console.log('Congratulations My Site Has Loaded!!!');
-  alert('WELCOME TO DARK GOLD')
+  alert('WELCOME TO DARK GOLD');
 })
 
-The function will prompts you with an alert box that say "welcome to dark gold" when you click on the webpage(excluing the photos), and the function also prints "Congratulations My Site Has Loaded!!!" to the Console log which you can view in dev tools console.
+//Function will reveal "Congratulations My Site Has Loaded" in console log, prompt with an alert box 'WELCOME TO DARK GOLD'//
