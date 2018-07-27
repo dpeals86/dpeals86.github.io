@@ -1,0 +1,137 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  font-size: 25px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bold;
+  line-height: 1.8em;
+  color: rgb(243, 243, 243);
+}
+
+/*positioning for backgrd img*/
+.backgroundimg, .pimg2, .pimg3 {
+  width: 100%;
+  position: relative;
+  opacity: 0.95;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+/*Logo positioning*/
+.Logo {
+    position: center;
+    top: 50%;
+    width: 100%;
+    }
+
+/*Images for all background parallax*/
+.backgroundimg {
+  background-image: url(../assets/ClBgPhoto.jpg);
+  min-height: 100%;
+}
+
+.pimg2 {
+  background-image: url(../assets/longExsposure.jpg);
+  min-height: 400px;
+}
+
+.pimg3 {
+  min-height: 400px;
+  background-image: url(../assets/shermanbridge.jpg);
+  filter: grayscale(50);
+  text-align: center;
+  color: #f4f4f4;
+  padding: 70px 80px 50px 100px;
+}
+
+/* applies to screens larger than 568px */
+@media (min-width: 568px) {
+  /* .backgroundimg.pimg2, .pimg3 { */
+  .backgroundimg, .pimg2, .pimg3, .Logo {
+    /* the next line is what causes the parallax effect
+    fixed = parallax
+    scroll = normal
+    /* background-attachment: fixed; */
+    background-attachment: fixed;
+  }
+}
+
+.section {
+  text-align: center;
+  padding: 70px 80px 50px 100px;
+  
+}
+
+.section-light {
+  background-color: #f4f4f4;
+  color: #666;
+}
+
+.section-dark {
+  background-color: #282e34;
+  color: #ddd;
+}
+
+
+    
+
+
+
+
+
+
+/*Portfolio*/
+
+h1 {
+    text-align: center;
+    margin: 30px 0 50px;
+    padding: 0px 80px 0px 100px;
+}
+/*Lighbox config, all pics are different sizes, all pics B&W until hover or clicked on*/
+.gallery {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.gallery img {
+    width:230px;
+    padding: 5px;
+    filter: grayscale(100%);
+    transition: .5s;
+}
+.gallery img:hover {
+    filter: grayscale(0);
+    transform: scale(1.1);
+}
+
+a:link {
+    color: green; 
+    background-color: transparent; 
+    text-decoration: none;
+}
+
+a:visited {
+    color: rgb(255, 7, 243);
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(29, 247, 255);
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+a:active {
+    color: #ddd;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+/*Footer*/
+footer{ 
+    text-align: center;
+    color: #ddd;
+    background-color: #282e34;
+}
+
