@@ -26,4 +26,4 @@ document.addEventListener('click', function() {
   alert('WELCOME TO DARK GOLD')
 })
 
-The function prints "Congratulations My Site Has Loaded!!!" to the Console log which you can view in dev tools console, then it prompts you with an alert box that say "welcome to dark gold"
+The function will prompts you with an alert box that say "welcome to dark gold" when you click on the webpage(excluing the photos), and the function also prints "Congratulations My Site Has Loaded!!!" to the Console log which you can view in dev tools console.
